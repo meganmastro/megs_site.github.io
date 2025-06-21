@@ -4,8 +4,82 @@
     <head>
         <meta charset="UTF-8">
         <title>Megs Site</title>
+        <style>
+            .form {
+            background-color: rgb(244, 227, 169);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            width: 50%;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Megs Test Site</h1>
+    <body>  
+        <h1>Karibu to Meg's First Website!</h1>
+        <p>This is an experiment to learn and play with html. Maybe I'll make my own site to blog... tbd...</p>
+        <span>Sections on this page:</span>
+        <ul>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Pictures</a></li>
+            <li><a href="#form">A form</a></li>
+        </ul>
+        <h3>Or check out my <a href="kenya.html">page on Kenya</a></h3>
+
+<!-- Playing with links -->
+    <hr>
+    <div id="links">
+        <h2>Links!</h2>
+        <p>Here are some links.</p>
+        <ul>
+            <p><a href="https://2048game.com/" target="_blank">Play 2048</a></p>
+            <p><span>Here is a fake </span> <a href="url" target="_blank">link</a> <span> within some text.</span></p>
+        </ul>
+    </div>
+
+<!-- Playing with images -->
+    <hr>
+    <div id="images">
+        <h2>Images!</h2>
+        <p>Here are some pictures.</p>
+        <span>This is some cashews</span>
+        <img src="cashews.jpg" alt="Cashews" width="300" height="200"><br>
+    </div>
+
+<!-- Sampling a form with inputs, labels, and a button -->
+    <hr>
+    <div id="form">
+        <h2>A form: inputs & buttons!</h2>
+        <p>Here's a form that doesn't work yet.</p>
+        <div class="form">
+            <form action="/action_page.php"
+                method="post"
+                enctype="multipart/form-data">
+
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <label>Select a color:</label>
+                <div class="color_choices">
+                    <input type="radio" name="colors" value="red" id="opt1" required />
+                    <label for="opt1">Red</label>
+                    <input type="radio" name="colors" value="green" id="opt2" />
+                    <label for="opt2">Green</label>
+                    <input type="radio" name="colors" value="blue" id="opt3" />
+                    <label for="opt3">Blue</label>
+                </div>
+                <br>
+                <label for="check">Check a box</label>
+                <input type="checkbox" id="check" name="chk_bx">
+                <br><br>
+                <input type="submit" value="Submit"> <!-- <input type="button"> VS <button type="submit">Submit</button> -->
+                <br>
+            </form>
+            <span>(If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".)</span>
+        </div>
+    </div>
+
     </body>
 </html>
