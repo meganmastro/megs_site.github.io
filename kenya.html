@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Meg in Kenya</title>
+    <style>
+        .title {
+            font-size: 120%;
+            /* color: rgb(4, 134, 43); */
+            color: green
+        }
+        .section {
+            background-color: rgb(90, 130, 102);
+            color: white;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h5><a href="index.html">go back</a></h5>
+
+    <div class="title"><h1>Meg in Kenya!</h1></div>
+    <span>Currently serving as a Peace Corps Education Volunteer in Western Kenya. Here's some stuff...</span>
+    <br>
+    <ul>
+        <li><a href="#pictures">Pictures</a></li>
+        <li><a href="#newsletters">Newsletters</a></li>
+    </ul>
+
+    <div id="pictures">
+        <h2>Pictures!</h2>
+        <img src="zebra.jpeg" alt="Zebra" width="400" height="533">
+        <img src="meg.jpg" alt="Meg" width="400" height="533">
+        <img src="giraffe.JPG" alt="Giraffe" width="400" height="533">
+    </div>
+
+    <div id="newsletters" class="section">
+        <h2>Newsletters!</h2>
+        <span>Since arriving in Kenya in Septermber 2024, I have written a fun, often lengthy, and hopefully informative update home every 4 months. 
+            Here are any you may have missed...</span>
+        <ul>
+            <li><a href="newsletters/email_two.pdf">Newsletter 2: Jan - Apr 2025</a></li>
+            <li><a href="newsletters/email_one.pdf">Newsletter 1: Sep - Dec 2024</a></li>
+        </ul>
+        <label for="email">
+            If you'd like to join my email list to recieve future ones direct to your inbox, enter your email here: 
+        </label>
+        <input type="text" id="email" name="email">
+        <input type="submit" value="Submit">
+    </div>
+
+</body>
+</html>
