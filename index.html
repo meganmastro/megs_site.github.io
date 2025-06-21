@@ -5,6 +5,17 @@
         <meta charset="UTF-8">
         <title>Megs Site</title>
         <style>
+            .img_container {
+                display: flex; /* Use flexbox for horizontal arrangement */
+            }
+            .img_wrapper {
+                vertical-align: top;
+                padding-left: 10px; 
+            }
+            .text_tab {
+                display: inline-block;
+                padding-left: 140px;
+            }
             .form {
             background-color: rgb(244, 227, 169);
             border: 2px solid black;
@@ -41,8 +52,13 @@
     <div id="images">
         <h2>Images!</h2>
         <p>Here are some pictures.</p>
-        <span>This is some cashews</span>
-        <img src="cashews.jpg" alt="Cashews" width="300" height="200"><br>
+        <span>This is me  <div class="text_tab">This is some cashews</div></span><br>
+        <div class="img_container">
+            <img src="selfie.jpeg" alt="Megan" width="200" height="266">
+            <div class="img_wrapper">
+                <img src="cashews.jpg" alt="Cashews" width="300" height="200"><br>
+            </div>
+        </div>
     </div>
 
 <!-- Sampling a form with inputs, labels, and a button -->
